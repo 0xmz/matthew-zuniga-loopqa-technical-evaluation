@@ -1,6 +1,6 @@
 import { test as base } from "@playwright/test";
-import { HomePage } from "../home-page";
-import { ProjectsPage } from "../projects-page";
+import { HomePage } from "../pages/home-page";
+import { ProjectsPage } from "../pages/projects-page";
 
 type ProjectsPageFixturesType = {
   homePage: HomePage;

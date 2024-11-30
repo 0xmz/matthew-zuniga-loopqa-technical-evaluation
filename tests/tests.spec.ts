@@ -1,5 +1,5 @@
 import { expect } from "@playwright/test";
-import { test } from "../pages/fixtures/fixtures";
+import { test } from "../fixtures/fixtures.ts";
 
 [
   {
