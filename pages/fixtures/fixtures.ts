@@ -9,12 +9,14 @@ type ProjectsPageFixturesType = {
 
 type ProjectsPageOptionFixturesType = {
   sidebarLink: string;
+  tags: string[];
 };
 
 export const test = base.extend<
   ProjectsPageFixturesType & ProjectsPageOptionFixturesType
 >({
   sidebarLink: ["sidebar link", { option: true }],
+  tags: [["tag"], { option: true }],
 
   homePage: async ({ page }, use) => {
     const homePage = new HomePage(page);

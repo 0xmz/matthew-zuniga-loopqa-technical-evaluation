@@ -8,7 +8,7 @@ export class ProjectsPage extends BasePage {
   constructor(page: Page) {
     super(page);
     this.cardColumns = new CardColumnsPageComponent(
-      page.locator('[class="CommentOnlyBoardBody Board-body"]') // use regex match
+      page.locator('[class="CommentOnlyBoardBody Board-body"]')
     );
   }
 }

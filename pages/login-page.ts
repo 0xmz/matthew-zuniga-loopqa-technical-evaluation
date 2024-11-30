@@ -22,7 +22,6 @@ export class LoginPage extends BasePage {
     this.loginButton = page.getByRole("button", { name: /^Log in$/ });
   }
 
-  // TODO: make this promise the main page
   public async login(): Promise<HomePage> {
     await this.emailAddressField.fill(user.emailAddress);
     await this.continueButton.click();
